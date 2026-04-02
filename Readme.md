@@ -44,7 +44,7 @@ Trong flow như OpenLane / OpenROAD (bạn đang làm):
 -STA (timing)  
 -Tapeout (nếu làm ASIC)  
 
-**👉 5. PicoRV32 rất hay được dùng vì:**
+**👉 5. PicoRV32 rất hay được dùng vì:**  
 -Code gọn  
 -Dễ chạy flow từ RTL → GDSII  
 

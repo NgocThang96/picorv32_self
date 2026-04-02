@@ -88,6 +88,19 @@ THỰC HIỆN PROJECT
 >        ↓  
 >GDSII (layout chip)  
 
+### Bước 1: Chuẩn bị Tools
+- Cài Linux  
+- Các các tool ASIC:  
+Yosys → synthesis  
+OpenROAD → placement/CTS/routing  
+OpenSTA → timing  
+Magic → layout  
+
+### Bước 2:  
+
+
+
+
 
 
 

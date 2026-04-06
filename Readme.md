@@ -68,7 +68,7 @@ Trong flow như OpenLane / OpenROAD (bạn đang làm):
 | `Mục đích`            | Nhúng, học tập                                                             | PC, điện thoại |
 
 
-THỰC HIỆN PROJECT
+CÁC BƯỚC CƠ BẢN THỰC HIỆN PROJECT
 --------------------------------------------------------------------
 
 **Tổng quan project bạn sẽ làm**  
@@ -88,7 +88,7 @@ THỰC HIỆN PROJECT
 >        ↓  
 >GDSII (layout chip)  
 
-### Bước 1: Chuẩn bị Tools
+### Chuẩn bị Tools  
 - Cài Linux  
 - Các các tool ASIC:  
 Yosys → synthesis  
@@ -96,7 +96,28 @@ OpenROAD → placement/CTS/routing
 OpenSTA → timing  
 Magic → layout  
 
-### Bước 2:  
+### Bước 1:  Lấy RTL của PicoRV32  
+git clone https://github.com/YosysHQ/picorv32.git  
+
+### Bước 2:  Tạo project OpenLane  
+Cấu trúc thư mục:  
+
+<img width="240" height="129" alt="image" src="https://github.com/user-attachments/assets/8e73cf04-7ba6-494a-a1de-7b1f2a9edd45" />  
+
+### Bước 3:  Viết config
+- Tạo file : config.json
+- <img width="431" height="211" alt="image" src="https://github.com/user-attachments/assets/e560bad8-a8da-4621-a392-14e7d3a5c3fa" />
+- Chú thích:
+  
+| Tham số                  | Nghĩa                                                          | 
+| ------------------------ | --------------------------------------------------------------------- |
+| `CLOCK_PERIOD`               | Chu kỳ clock                                                             | 
+| `CORE_UTIL`                | Mật độ Cell                                                            |  
+| `TARGET_DENSITY`                | Mật độ lấp đầy mục tiêu                                                          | 
+
+
+
+ 
 
 
 

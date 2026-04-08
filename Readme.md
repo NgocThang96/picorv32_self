@@ -102,10 +102,13 @@ git clone https://github.com/YosysHQ/picorv32.git
 ### Bước 2:  Tạo project OpenLane  
 Cấu trúc thư mục:  
 
-<img width="240" height="129" alt="image" src="https://github.com/user-attachments/assets/8e73cf04-7ba6-494a-a1de-7b1f2a9edd45" />  
+picorv32_core/  
+ ├── config.json  
+ ├── src/  
+ │    └── picorv32.v  
 
-### Bước 3:  Viết config
-- Tạo file : config.json
+### Bước 3:  Viết config  
+- Tạo file : config.json  
 {  
   "DESIGN_NAME": "picorv32",  
   "VERILOG_FILES": "dir::src/picorv32.v",  
@@ -123,6 +126,7 @@ Cấu trúc thư mục:
 | `TARGET_DENSITY`                | Mật độ lấp đầy mục tiêu                                                          | 
 
 
+### Bước 4:  Chạy Physical Design flow  
 
  
 

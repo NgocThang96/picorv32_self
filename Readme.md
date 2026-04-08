@@ -106,8 +106,15 @@ Cấu trúc thư mục:
 
 ### Bước 3:  Viết config
 - Tạo file : config.json
-- <img width="431" height="211" alt="image" src="https://github.com/user-attachments/assets/e560bad8-a8da-4621-a392-14e7d3a5c3fa" />
-- Chú thích:
+{  
+  "DESIGN_NAME": "picorv32",  
+  "VERILOG_FILES": "dir::src/picorv32.v",  
+  "CLOCK_PORT": "clk",  
+  "CLOCK_PERIOD": 10,  
+  "FP_CORE_UTIL": 40,  
+  "PL_TARGET_DENSITY": 0.60  
+}  
+- Chú thích:  
   
 | Tham số                  | Nghĩa                                                          | 
 | ------------------------ | --------------------------------------------------------------------- |

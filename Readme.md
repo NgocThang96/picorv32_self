@@ -139,6 +139,14 @@ picorv32_core/
 
 ### Bước 5: kiểm tra báo cáo  
 
+✅ 1. Timing report  
+<img width="302" height="156" alt="image" src="https://github.com/user-attachments/assets/23e30e0c-098b-4622-95d2-a91ee4595abe" />  
+- STA là gì?  
+STA là Static Timing Analysis
+Kiểm tra tín hiệu chạy có kịp clock ?
+có Lỗi set up/hold timing không
+
+  
 
 
 

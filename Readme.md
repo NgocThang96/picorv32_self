@@ -127,6 +127,22 @@ picorv32_core/
 
 
 ### Bước 4:  Chạy Physical Design flow  
+- Vào Openlane nhập lệnh "make mount"
+- Chạy flow: "./flow.tcl -design picorv32_core"
+- Tool sẽ chạy:  
+✅ synthesis  
+✅ floorplan  
+✅ placement  
+✅ CTS  
+✅ routing  
+✅ STA
+
+### Bước 5: kiểm tra báo cáo  
+
+
+
+
+
 
  
 

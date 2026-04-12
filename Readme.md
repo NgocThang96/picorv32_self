@@ -141,6 +141,7 @@ picorv32_core/
 
 ### ✅ 1. Timing report  
 <img width="302" height="156" alt="image" src="https://github.com/user-attachments/assets/23e30e0c-098b-4622-95d2-a91ee4595abe" />  
+
 ### STA là gì?  
 STA: Static Timing Analysis  
 Kiểm tra tín hiệu chạy có kịp clock ?  

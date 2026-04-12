@@ -142,7 +142,7 @@ picorv32_core/
 ### ✅ 1. Timing report  
 <img width="302" height="156" alt="image" src="https://github.com/user-attachments/assets/23e30e0c-098b-4622-95d2-a91ee4595abe" />  
 ### STA là gì?  
-STA: Static Timing Analysis
+STA: Static Timing Analysis  
 Kiểm tra tín hiệu chạy có kịp clock ?  
 có Lỗi set up/hold timing không  
 
@@ -155,11 +155,16 @@ tính điện trở dây (R)
 tính điện dung (C)  
 → tính delay thật của tín hiệu.  
 
-### Kiểm tra folder 31-sta-rcx_max và file sta-rcx_max.rpt  
+### Đầu tiên, kiểm tra tín hiệu chậm nhất:    
+Kiểm tra folder 31-sta-rcx_max, file sta-rcx_max.rpt, corner: slowest  
 Chú thích:  
--> R max và C max thì delay lớn nhất, tín hiệu đi chậm nhất  
--> dùng để kiểm tra SETUP Timing  
+- R max và C max thì delay lớn nhất,
+- corner: slowest (transistor chậm nhất)
+-> tín hiệu đi chậm nhất  
+-> dùng để kiểm tra SETUP Timing, trong trường hợp xấu nhất thì tín hiệu có kịp clock hay không.  
 
+
+ 
 
 
 

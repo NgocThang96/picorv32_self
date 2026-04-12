@@ -155,6 +155,15 @@ tính điện trở dây (R)
 tính điện dung (C)  
 → tính delay thật của tín hiệu.  
 
+### Kiểm tra folder 31-sta-rcx_max và file sta-rcx_max.rpt  
+Chú thích:  
+-> R max và C max thì delay lớn nhất, tín hiệu đi chậm nhất  
+-> dùng để kiểm tra SETUP Timing  
+
+
+
+
+
 
 
 

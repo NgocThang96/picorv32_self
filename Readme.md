@@ -158,10 +158,11 @@ tính điện dung (C)
 ### Đầu tiên, kiểm tra tín hiệu chậm nhất:    
 Kiểm tra folder 31-sta-rcx_max, file sta-rcx_max.rpt, corner: slowest  
 Các điều kiện kiểm tra:  
-- R max và C max thì delay lớn nhất,
-- corner: slowest (transistor chậm nhất)
+- R max và C max thì delay lớn nhất,  
+- corner: slowest (transistor chậm nhất)  
 -> tín hiệu đi chậm nhất  
--> dùng để kiểm tra SETUP Timing, trong trường hợp xấu nhất thì tín hiệu có chạy kịp clock hay không.
+-> dùng để kiểm tra SETUP Timing, trong trường hợp xấu nhất thì tín hiệu có chạy kịp clock hay không.  
+  
    
 
 

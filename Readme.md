@@ -165,6 +165,10 @@ Các điều kiện kiểm tra:
 -> dùng để kiểm tra SETUP Timing, trong trường hợp xấu nhất thì tín hiệu có chạy kịp clock hay không.
 
   Kiểm tra ****folder 31-sta-rcx_max****, ****file sta-rcx_max.rpt, corner: slowest****
+  ### Tổng kết:
+  a. Có khoảng 400 critical path, setup timing bị ****VIOLATED****
+  - Trong đó critical path có slack âm nhất là từ flip flop Startpoint: _14499_ đến Endpoint: _14561_
+  
   
   
    

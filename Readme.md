@@ -300,7 +300,20 @@ Fanout     Cap    Slew   Delay    Time   Description
   - Kết quả: vi phạm setup timing  ****-4.13 ns.****   
 
 **Phân tích theo từng khối**  
+ **a. Clock Path:**  
+ - clk → clkbuf → clkbuf → clkbuf → _14499_/CLK  
+ - Theo như Path trên:
+clkbuf_0_clk/X   ****delay 0.86 → time 1.47****  
+clkbuf_4_10_0    ****delay 0.68 → time 2.18****  
+clkbuf_leaf      ****delay 0.44 → time 2.63****
+-> clock đến FF mất 2.63ns  
+-> tăng thêm thời gian delay cho required time
 
+   **b. Data Path**
+   
+
+
+ 
    
   
   

@@ -310,7 +310,39 @@ clkbuf_leaf      ****delay 0.44 → time 2.63****
 -> tăng thêm thời gian delay cho required time
 
    **b. Data Path**
-   
+   - Bắt đầu từ net:
+   count_cycle[0] (net)  
+-> Tuy không có delay riêng, nhưng tại thời điểm đó thì:  
+  + fanout = 4  
+  + cap = 0.01  
+→ ảnh hưởng wire delay + slew của stage sau  
+
+**c. các AND Gates**   
+Dựa theo Path trên:  
+_11356_/X   delay 0.57 → time 3.98  
+_11365_/X   delay 0.59 → time 4.58  
+_11374_/X   delay 0.55 → time 5.12  
+...  
+
+Time: 3.41 → 4.58 → 5.12 → ... → 15.35  
+-> Delay cộng dần qua từng stage  
+
+**d. Fanout và Cap tăng**  
+Dựa theo Path trên:  
+- Fanout: 5 → 6 → 8  
+- Cap:    0.01 → 0.03
+-> wire delay tăng  
+-> cell delay tăng (do load lớn hơn)
+
+  **e. Thêm buffer**
+  Dựa theo Path trên:
+  - buf_6 delay 0.26  
+  - buf_6 delay 0.25
+  -> mục đích giảm fanout/ cải thiện slew để giảm delay nhưng không giảm logic depth  
+
+    
+
+
 
 
  

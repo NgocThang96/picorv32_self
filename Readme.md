@@ -346,7 +346,21 @@ Dựa theo Path trên:
   -> mục đích giảm fanout/ cải thiện slew để giảm delay nhưng không giảm logic depth
 
     **g. Late-stage logic**
-    Clock-to-Q delay (C2Q)
+  - Late-stage logic là các gate nằm GẦN endpoint (FF cuối)   
+  - Trong Path là :  
+nand3_4 → and3_1 → clkbuf_1 → FF (_14561_)
+  - Timeline là:
+  ...
+14.87 ns → AND  
+15.35 ns → AND  
+15.74 ns → NAND  
+16.05 ns → AND  
+16.22 ns → FF
+    -> các gate này hoạt động ở cuối path
+    - Các Late-gate này chỉ gây ra delay rất nhỏ (0.1-0.3ns) so với AND chain trước đó (0.6ns x stage)  
+    - Tuy các delay nhỏ nhưng nó chỉ xảy ra sau khi các AND gate trước đó đã tạo ra tổng delay quá lớn 
+
+    
 
     
 

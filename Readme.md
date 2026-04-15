@@ -165,9 +165,8 @@ Các điều kiện kiểm tra:
 -> dùng để kiểm tra SETUP Timing, trong trường hợp xấu nhất thì tín hiệu có chạy kịp clock hay không.
 
   Kiểm tra ****folder 31-sta-rcx_max****, ****file sta-rcx_max.rpt, corner: slowest****
-  ### Phân tích:
- ### a. Tóm tắt:  
-  - Có khoảng 400 critical path, setup timing bị ****VIOLATED****
+ ### Đánh giá tổng quan:   
+  - Có khoảng 400 critical path, setup timing bị ****VIOLATED****  
   - Trong đó critical path có slack âm nhất là từ flip flop Startpoint: _14499_ đến Endpoint: _14561_
   - Đây là Critical Path cụ thể:  
  
@@ -293,11 +292,16 @@ Fanout     Cap    Slew   Delay    Time   Description
                                 -16.22   data arrival time
 -----------------------------------------------------------------------------
                                  -4.13   slack (VIOLATED)    
-                                 
+
+  **Phân tích Path**    
+  **Tổng quan**  
+  - Start FF (_14499_) → AND chain (~20 stages) → FF (_14561_)  
   - The data arrival time is ****16.22 ns,  the required time of 12.09 ns****
   - Kết quả: vi phạm setup timing  ****-4.13 ns.****   
-  - 
-  
+
+**Phân tích theo từng khối**  
+
+   
   
   
    

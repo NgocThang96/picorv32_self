@@ -293,7 +293,7 @@ Fanout     Cap    Slew   Delay    Time   Description
 -----------------------------------------------------------------------------
                                  -4.13   slack (VIOLATED)    
 
-  **Phân tích Path**    
+  **PHÂN TÍCH PATH**    
   **Tổng quan**  
   - Start FF (_14499_) → AND chain (~20 stages) → FF (_14561_)  
   - The data arrival time is ****16.22 ns,  the required time of 12.09 ns****
@@ -358,7 +358,15 @@ nand3_4 → and3_1 → clkbuf_1 → FF (_14561_)
 16.22 ns → FF
     -> các gate này hoạt động ở cuối path
     - Các Late-gate này chỉ gây ra delay rất nhỏ (0.1-0.3ns) so với AND chain trước đó (0.6ns x stage)  
-    - Tuy các delay nhỏ nhưng nó chỉ xảy ra sau khi các AND gate trước đó đã tạo ra tổng delay quá lớn 
+    - Tuy các delay nhỏ nhưng nó chỉ xảy ra sau khi các AND gate trước đó đã tạo ra tổng delay quá lớn
+
+  **KẾT LUẬN**  
+- Delay của critical path này bị ảnh hưởng bởi nhiều cổng AND, trong đó mỗi stage (khoảng 20 stage) đóng góp khoảng 0.5–0.7 ns. Tổng data arrival time lên tới 16.22 ns.  
+
+- Mặc dù vẫn có độ trễ dây (wire delay) do fanout và C điện dung tăng lên, nhưng đây không phải là yếu tố chính làm tăng delay lên. Việc thêm buffer giúp cải thiện độ chuyển mức tín hiệu (slew), nhưng không làm giảm logic depth, nên không cải thiện được độ delay của data arrival time.
+
+- Vì vậy, nguyên nhân chính làm timing bị violated là do tổ hợp gate quá lớn. 
+   
 
     
 

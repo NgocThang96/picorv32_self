@@ -1,1 +1,40 @@
+### CHECK REPORT VỀ CONGESTION (ROUTING)  
+- Ở thư mục ****"reports/routing/"****  
+- Mở file ****"26-drt_metrics.json":****  
+- {
+	"route__net": 10528,
+	"route__net__special": 2,
+	"route__drc_errors__iter:1": 8106,
+	"route__wirelength__iter:1": 455223,
+	"route__drc_errors__iter:2": 3196,
+	"route__wirelength__iter:2": 451660,
+	"route__drc_errors__iter:3": 2885,
+	"route__wirelength__iter:3": 451079,
+	"route__drc_errors__iter:4": 322,
+	"route__wirelength__iter:4": 450521,
+	"route__drc_errors__iter:5": 36,
+	"route__wirelength__iter:5": 450521,
+	"route__drc_errors__iter:6": 7,
+	"route__wirelength__iter:6": 450494,
+	"route__drc_errors__iter:7": 0,
+	"route__wirelength__iter:7": 450484,
+	"route__drc_errors": 0,
+	"route__wirelength": 450484,
+	"route__vias": 80363,
+	"route__vias__singlecut": 80363,
+	"route__vias__multicut": 0,
+	"design__io": 411,
+	"design__die__area": 257852,
+	"design__core__area": 240531,
+	"design__instance__count": 14226,
+	"design__instance__area": 119115,
+	"design__instance__count__stdcell": 14226,
+	"design__instance__area__stdcell": 119115,
+	"design__instance__count__macros": 0,
+	"design__instance__area__macros": 0,
+	"design__instance__utilization": 0.49522,
+	"design__instance__utilization__stdcell": 0.49522,
+	"flow__warnings__count": 10,
+	"flow__errors__count": 0
+}  
 

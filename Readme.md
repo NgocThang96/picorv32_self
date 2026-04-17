@@ -161,7 +161,7 @@ tính điện trở dây (R)
 tính điện dung (C)  
 → tính delay thật của tín hiệu.  
 
-### Đầu tiên, kiểm tra tín hiệu chậm nhất:    
+### A. Đầu tiên, kiểm tra tín hiệu chậm nhất (SETUP TIMING):    
 
 Các điều kiện kiểm tra:  
 - R max và C max thì delay lớn nhất,  
@@ -370,8 +370,13 @@ nand3_4 → and3_1 → clkbuf_1 → FF (_14561_)
 
 - Mặc dù vẫn có độ trễ dây (wire delay) do fanout và C điện dung tăng lên, nhưng đây không phải là yếu tố chính làm tăng delay lên. Việc thêm buffer giúp cải thiện độ chuyển mức tín hiệu (slew), nhưng không làm giảm logic depth, nên không cải thiện được độ delay của data arrival time.
 
-- Vì vậy, nguyên nhân chính làm timing bị violated là do tổ hợp gate quá lớn. 
-   
+- Vì vậy, nguyên nhân chính làm timing bị violated là do tổ hợp gate quá lớn.
+
+### B. KIỂM TRA TÍN HIỆU NHANH NHẤT (HOLD TIMING)
+- Kiểm tra bằng cách xem report của ****file "multi_corner_sta.min.rpt"****  
+- Sau khi kiểm tra, Không phát hiện vi phạm hold timing, cho thấy tất cả các đường dữ liệu đều thỏa mãn về độ trễ (delay) tối thiểu.
+
+
 
     
 

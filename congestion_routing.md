@@ -1,4 +1,17 @@
 ### CHECK REPORT VỀ CONGESTION (ROUTING)  
+
+**1. Congestion là gì?**  
+Congestion = tình trạng quá nhiều dây (routing demand) đi qua cùng một vùng chip > khả năng chứa của vùng đó (routing capacity)  
+
+****2. Vì sao xảy ra congestion?****  
+Nguyên nhân:  
+- Placement quá dày (cell bị nhét quá sát)  
+Logic kết nối phức tạp (fanout lớn)  
+Macro/block chặn đường đi  
+Clock tree phân bố không đều  
+
+
+
 - Ở thư mục ****"reports/routing/"****  
 - Mở file ****"26-drt_metrics.json":****  
 - {
@@ -37,4 +50,20 @@
 	"flow__warnings__count": 10,  
 	"flow__errors__count": 0  
 }   
+
+### PHÂN TÍCH  
+### a. DRC Errors  
+route__drc_errors__iter:1 → 8106  
+...  
+route__drc_errors__iter:7 → 0  
+route__drc_errors = 0 ✅  
+-> Ban đầu có nhiều lỗi (8106), sau đó tool fix dần rồi drc_errors = 0 (Clean routing).   
+-> Kết luận: không có vấn đề về layout  
+
+
+
+
+
+
+
 

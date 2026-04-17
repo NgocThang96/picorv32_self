@@ -16,11 +16,11 @@ PICORV32 - A Size-Optimized RISC-V CPU
 -Control logic  
 -Memory interface  
 
-**Kiến trúc tổng quan**  
+**KIẾN TRÚC TỔNG QUAN**  
 
-<img width="359" height="310" alt="image" src="https://github.com/user-attachments/assets/1d15cfc1-0854-4335-a70a-1d6faac70ad0" />
+<img width="359" height="310" alt="image" src="https://github.com/user-attachments/assets/1d15cfc1-0854-4335-a70a-1d6faac70ad0" />  
 
-  
+   
 **⚙️ 2. Đặc điểm chính**  
 🔹 Nhẹ và tối ưu  
 -Rất ít LUT/FF khi triển khai trên FPGA  

@@ -18,18 +18,18 @@ PICORV32 - A Size-Optimized RISC-V CPU
 
 **Kiến trúc tổng quan**  
 
-          +----------------+
-Instruction →  Decoder     |
-          +----------------+
-                    ↓
-              +-----------+
-              |   ALU     |
-              +-----------+
-                    ↓
-              Register File
-                    ↓
-                Memory
-
+          +----------------+  
+Instruction →  Decoder     |  
+          +----------------+  
+                    ↓  
+              +-----------+  
+              |   ALU     |  
+              +-----------+  
+                    ↓  
+              Register File  
+                    ↓  
+                Memory  
+  
 **⚙️ 2. Đặc điểm chính**  
 🔹 Nhẹ và tối ưu  
 -Rất ít LUT/FF khi triển khai trên FPGA  

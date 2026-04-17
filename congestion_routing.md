@@ -36,5 +36,5 @@
 	"design__instance__utilization__stdcell": 0.49522,  
 	"flow__warnings__count": 10,  
 	"flow__errors__count": 0  
-}   .
+}   
 
